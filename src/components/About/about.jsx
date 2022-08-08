@@ -1,5 +1,5 @@
 import "./about.css"
-import Me from "../../img/me.jpg"
+import Me from "../../img/Team.jpg"
 import Badge from "../../img/Badge.jpg"
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
                 <div className="a-award">
                     <img src={Badge} alt="" className="a-award-img" />
                     <div className="a-award-text">
-                        <h4 className="a-award-title">Game of Learners Winner</h4>
+                        <h4 className="a-award-title">Game of Learners Winner 2022</h4>
                         <p className="a-award-desc">Lorem, ipsum dolor sit amet consectetur 
                         adipisicing elit. Temporibus, nulla? Error, velit! Velit, doloribus accusamus?</p>
                     </div>
