@@ -1,4 +1,5 @@
 import "./Product.css"
+
 // import Me from "../../img/me.jpg"
 
 const Product = ({img, link}) => {

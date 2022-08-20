@@ -4,12 +4,28 @@ import LinkedIn from "../../img/SVG/linkedin-social-media-svgrepo-com.svg"
 import Git from "../../img/SVG/sc-github-svgrepo-com.svg"
 import Email from "../../img/SVG/social-media-svgrepo-com.svg"
 import { useRef } from "react"
+import { useState } from "react"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const formRef = useRef
+    const formRef = useRef()
+    const [done, setdone] = useState(false)
+
     const handleSubmit =(e) =>{
         e.preventDefault ();
-    }
+
+        emailjs.sendForm(
+            'service_fgnn1a1', 
+            'template_cwnck5v', 
+            formRef.current, 
+            'JCix6VBZMaEG1VcCW')
+      .then((result) => {
+          console.log(result.text);
+          setdone(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
   return (
     <div className='c'>
       <div className="c-bg"></div>
@@ -34,6 +50,7 @@ const Contact = () => {
                     @humphreymuriungi/
                 </div>
             </div>
+            
         </div>
         <div className="c-right">
             <p className="c-desc">
@@ -41,12 +58,13 @@ const Contact = () => {
                 I am here to fulfill your needs &
                 Actualize your ideas. Quick solutions to suit your needs.
             </p>
-            <form ref={formRef} onSubmit{handleSubmit}>
+            <form ref = {formRef} onSubmit={handleSubmit}>
                 <input type="text" name="user_name" placeholder="Name" />
                 <input type="text" name="user_email" placeholder="Email" />
                 <input type="text" name="user_subject" placeholder="Subject" />
                 <textarea name="message" id="" rows="5" placeholder="Message"></textarea>
                 <button>Submit</button>
+                {done && "Thank You..."}
             </form>
         </div>
       </div>
