@@ -1,19 +1,19 @@
 import Me from "../src/img/me.jpg"
 
-export const products = [
+export const Products = [
     {
         id:1,
-        img: <img src={Me} alt="" className="" />,
+        img: <img src={Me} alt="img" className="" />,
         link: "https://dev.azure.com/Green-Wavers/",
     },
     {
         id:2,
-        img: <img src="../src/img/me.jpg" alt="" className="" />,
+        img: <img src= {Me} alt="" className="" />,
         link: "https://dev.azure.com/Green-Wavers/",
     },
     {
         id:3,
-        img: <img src="../src/img/me.jpg" alt="" className="" />,
+        img: <img src="../src/img/me.jpg" alt="Img" className="" />,
         link: "https://dev.azure.com/Green-Wavers/",
     },
     {

@@ -12,7 +12,7 @@ const intro = () => {
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">Power Platforms Developer</div>
+                            <div className="i-title-item">Power Platform Developer</div>
                             <div className="i-title-item">Program Manager</div>
                             <div className="i-title-item">Community Advocate</div>
                             <div className="i-title-item">Photographer</div>

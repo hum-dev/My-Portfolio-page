@@ -1,4 +1,5 @@
 {
     "appService.defaultWebAppToDeploy": "/subscriptions/696973f6-d588-4d72-b532-6d6e183d739a/microsoft.web/sites/subscriptions/696973f6-d588-4d72-b532-6d6e183d739a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Azuredm",
-    "appService.deploySubpath": "."
+    "appService.deploySubpath": ".",
+    "liveServer.settings.port": 5501
 }
